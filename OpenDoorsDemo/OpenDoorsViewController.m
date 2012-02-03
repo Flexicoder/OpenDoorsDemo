@@ -30,7 +30,7 @@
     
     //Add a delay to the open doors sequence, this allows the OS to determine
     //the correct orientaion and fire the all important willRotate
-    [NSTimer scheduledTimerWithTimeInterval: 2
+    [NSTimer scheduledTimerWithTimeInterval: 3.5
                                      target: self
                                    selector: @selector(openDoors)
                                    userInfo: nil
@@ -70,16 +70,30 @@
     leftFrame.origin.x = -adjust;
     rightFrame.origin.x += adjust;
 	
-    //Set up the animation, change the frames and commit it
-	[UIView beginAnimations:@"swipe" context:nil];
-	[UIView setAnimationDuration:1.2];
-	[UIView setAnimationDelay:0.0];
-	[UIView setAnimationDelegate:self];
+    //Old School Animation
     
-    self.leftDoor.frame = leftFrame;
-	self.rightDoor.frame = rightFrame;
-	
-	[UIView commitAnimations];
+    //Set up the animation, change the frames and commit it
+//	[UIView beginAnimations:@"swipe" context:nil];
+//	[UIView setAnimationDuration:1.2];
+//	[UIView setAnimationDelay:0.0];
+//	[UIView setAnimationDelegate:self];
+//    
+//    self.leftDoor.frame = leftFrame;
+//	self.rightDoor.frame = rightFrame;
+//	
+//	[UIView commitAnimations];
+    
+    //Blocks
+    
+    [UIView animateWithDuration:1.2
+     
+                     animations:^{ 
+                         self.leftDoor.frame = leftFrame;
+                         self.rightDoor.frame = rightFrame;
+ 
+                     }
+     
+     ];
     
     
     doorsClosed = NO;

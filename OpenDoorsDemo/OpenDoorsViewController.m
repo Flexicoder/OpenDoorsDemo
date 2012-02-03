@@ -37,6 +37,12 @@
                                     repeats: NO];
     
 }
+
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return YES;
+}
+
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
     
     isPortrait = UIDeviceOrientationIsPortrait(toInterfaceOrientation);
@@ -100,9 +106,6 @@
     
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-		return YES;
-}
 
 
 - (void)dealloc {

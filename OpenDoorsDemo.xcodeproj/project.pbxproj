@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A60AE7CE14E00D580006D162 /* README in Resources */ = {isa = PBXBuildFile; fileRef = A60AE7CD14E00D580006D162 /* README */; };
 		A6F3606314D95B4100964CB3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F3606214D95B4100964CB3 /* UIKit.framework */; };
 		A6F3606514D95B4100964CB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F3606414D95B4100964CB3 /* Foundation.framework */; };
 		A6F3606714D95B4100964CB3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F3606614D95B4100964CB3 /* CoreGraphics.framework */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A60AE7CD14E00D580006D162 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A6F3605E14D95B4100964CB3 /* OpenDoorsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenDoorsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F3606214D95B4100964CB3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A6F3606414D95B4100964CB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,6 +68,7 @@
 		A6F3605314D95B4000964CB3 = {
 			isa = PBXGroup;
 			children = (
+				A60AE7CD14E00D580006D162 /* README */,
 				A6F360A314D9628A00964CB3 /* Default-Landscape~ipad.png */,
 				A6F360A114D9628300964CB3 /* Default-Portrait~ipad.png */,
 				A6F3606814D95B4100964CB3 /* OpenDoorsDemo */,
@@ -191,6 +194,7 @@
 				A6F360A014D960C900964CB3 /* SlideBackgroundiPadPortrait.png in Resources */,
 				A6F360A214D9628300964CB3 /* Default-Portrait~ipad.png in Resources */,
 				A6F360A414D9628A00964CB3 /* Default-Landscape~ipad.png in Resources */,
+				A60AE7CE14E00D580006D162 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +311,7 @@
 				A6F3607E14D95B4100964CB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
